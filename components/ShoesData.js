@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const Shoes = () => {
@@ -25,15 +26,20 @@ const Shoes = () => {
           <div
             key={shoe.id}
             className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer rounded-lg p-6 w-80 ml-5"
-            // Set the width of the card using the w-80 class (width: 20rem)
+            
           >
+            <Link
+            href="/product/1"
+            >
             <img src={shoe.imageURL} alt={shoe.name} className="w-full h-48 object-cover mb[-50] " />
             <h2 className="text-xl font-medium mb-2">{shoe.name}</h2>
             <div className="text-gray-600">
               <p>Brand: {shoe.brand}</p>
               <p>Price: ${shoe.price}</p>
             </div>
-            {/* Add more details as needed */}
+            </Link>
+            
+           
           </div>
         );
       })}

@@ -2,6 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductCards from "./productCards/ProductCards";
+import Shoes from "./ShoesData";
+
 
 const RelatedProducts = () => {
   const responsive = {
@@ -25,16 +27,19 @@ const RelatedProducts = () => {
       containerClass="-mx-[10px]"
       itemClass="px-[10px]"
       >
-      <ProductCards/>
+      {/* <ProductCards/> */}
+        {/* <ProductCards/>
         <ProductCards/>
         <ProductCards/>
         <ProductCards/>
         <ProductCards/>
         <ProductCards/>
         <ProductCards/>
-        <ProductCards/>
-        <ProductCards/>
+        <ProductCards/> */}
+        <Shoes/>
+        
       </Carousel>
+      
       ;
     </div>
   );

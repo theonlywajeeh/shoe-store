@@ -1,6 +1,7 @@
 import HeroBanner from "@/components/HeroBanner";
 import ProductCards from "@/components/productCards/ProductCards";
 import ProductCards2 from "@/components/productCards/ProductCards2";
+import SearchComponent from "@/components/SearchComponent";
 import Shoes from "@/components/ShoesData";
 
 import Wrapper from "@/components/Wrapper";
@@ -8,8 +9,10 @@ import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
 
 export default function Home() {
+  
   return (
     <main>
+      
       <HeroBanner />
       <Wrapper>
         <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">

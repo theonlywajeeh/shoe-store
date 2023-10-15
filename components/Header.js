@@ -8,6 +8,7 @@ import { BsCart } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
 import { MenuMobile } from "./MenuMobile";
+import SearchComponent from "./SearchComponent";
 
 export const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -58,6 +59,7 @@ export const Header = () => {
             setMobileMenu={setMobileMenu}
           />
         )}
+        <SearchComponent/>
 
         <div className="flex items-center gap-2 text-black">
           {/* icon start */}

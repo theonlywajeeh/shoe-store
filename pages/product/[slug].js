@@ -26,7 +26,7 @@ export const ProductDetails = () => {
             </div>
 
             {/* PRODUCT SUBTITLE */}
-            <div className="text-lg font-semibold mb-5">SHOES HYN BHAI</div>
+            <div className="text-lg font-semibold mb-5"></div>
 
             {/* PRODUCT Price */}
             <div className="text-lg font-semibold mb-5">Price Rs.50,000</div>
